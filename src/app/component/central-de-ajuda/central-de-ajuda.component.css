@@ -1,0 +1,140 @@
+body {
+    background-color: #ffffff;
+    margin: auto
+  }
+  
+  .help-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #4097AA;
+    font-weight: bolder;
+    padding: 1.2em;
+  }
+  
+  
+  /* Formatação Collapse */
+  
+  
+  /*.collapse-title{
+      color: #4097aa;
+      font-weight: bold;
+      font-size: 1.5em;
+  }*/
+  
+  /*.card-header{ -- Títulos do collapse (Sobre o Curso, Certificado, Acesso)
+      color: #008080;
+      font-size: 1em;
+  }*/
+  
+  .card-image {
+    /*div do collapse*/
+    background-image: url(../../../assets/images/ca-bg.png);
+    width: 100%;
+  }
+  
+  .white-text {
+    /*Títulos do collapse*/
+    color: #4097AA !important;
+  }
+  
+  .ask-title {
+    /*Collapse: perguntas*/
+    color: #4097AA !important;
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 0em;
+    margin: 0em
+  }
+  
+  .answer-text {
+    /*Collapse: respostas*/
+    color: #2d4057;
+    font-size: 0.8em;
+  }
+  
+  .card-body {
+    /*Cor do cartão do início da página*/
+    background-color: #f2ddc8;
+  }
+  
+  .col-md-3 {
+    /*espaçamento entre cartões do início e collapse*/
+    padding: 0.1em;
+    padding-bottom: 4em;
+    margin: 10px;
+  }
+  
+  .card .card-body .card-text {
+    /*cartões do início da página*/
+    font-size: 0.9em;
+    color: #2d4057;
+  }
+  
+  .card .card-body h4 {
+    /*Espaço dos cartões do início da página*/
+    color: #2d4057;
+    font-weight: bolder;
+  }
+  
+  
+  .incon-fas {
+    /*Ícones do collapse*/
+    color: #4097AA !important;
+  
+  }
+  
+  .p {
+    margin-bottom: 1em
+  }
+  
+  .h3 {
+    margin-bottom: 1em
+  }
+  
+  /*.rgba-black-strong{
+     color: rgba(0,0,0,0.2);
+  }*/
+  
+  
+  /* Formatação Formulário */
+  
+  .center-block {
+    /*Div contato*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+  
+  .form-title {
+    color: #4097AA;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0em;
+  }
+  
+  .form-subtitle {
+    color: #4097AA;
+    margin: 0em;
+    text-align: center;
+  }
+  
+  .form-text {
+    /*Texto do formulário, que sobe ao clicar no campo*/
+    color: #bdbdbd;
+    font-size: 0.8em;
+  }
+  
+  .fa {
+    /*Ícones do formulário*/
+    color: #4097AA;
+  }
+  
+  .btn {
+    /*Botão do formulário*/
+    color: #ffffff;
+    background-color: #4097AA;
+  }

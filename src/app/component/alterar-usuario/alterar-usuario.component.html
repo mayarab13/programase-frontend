@@ -1,0 +1,53 @@
+<!--Título do Formulário-->
+<br><br>
+<h1 class="form-title">Alterar Usuário</h1>
+
+<!--Formulário-->
+
+<div class="container">
+
+    <form class="col-xl-10 py-6 center-block">
+        <b>
+            <p>Nome</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="fas fa-user prefix"></i>
+            <input type="text" id="validationServer01" class="form-control" [(ngModel)]="usuario.nome" name="nome" />
+        </div>
+
+        <b>
+            <p>E-mail</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="far fa-envelope prefix"></i>
+            <input type="text" id="validationServer02" class="form-control" [(ngModel)]="usuario.email" name="email" />
+        </div>
+        <b>
+            <p>Telefone</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="fas fa-phone prefix"></i>
+            <input type="tel" id="validationServer03" class="form-control" [(ngModel)]="usuario.telefone"
+                name="telefone" />
+        </div>
+
+        <b>
+            <p>Senha</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="fas fa-lock prefix"></i>
+            <input type="password" id="validationServer04" class="form-control" [(ngModel)]="usuario.senha"
+                name="senha" />
+            <div class="valid-feedback">
+                OK
+            </div>
+        </div>
+
+        <!--Botão confirmar-->
+
+        <div class="text-center mt-4">
+            <button (click)="alterarUsuario()" class="btn btn-default btn-rounded" type="submit">
+                Confirmar <i class="fa fa-paper-plane-o ml-1"></i>
+            </button>
+        </div>
+    </form>

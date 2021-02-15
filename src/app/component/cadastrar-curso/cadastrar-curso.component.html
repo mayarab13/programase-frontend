@@ -1,0 +1,67 @@
+<!--Título do Formulário-->
+<br><br>
+<h1 class="form-title">Cadastrar curso</h1>
+
+<!--Formulário-->
+
+<div class="container">
+
+    <form class="col-xl-10 py-6 center-block">
+        <b>
+            <p>Nome do Curso</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="fas fa-book-open prefix"></i>
+            <input type="text" id="validationServer01" class="form-control" [(ngModel)]="curso.nome" name="curso" />
+
+        </div>
+
+        <b>
+            <p>Descrição do Curso</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="far fa-comment-alt prefix"></i>
+            <input type="text" id="validationServer02" class="form-control" [(ngModel)]="curso.descricao"
+                name="descrição" />
+
+        </div>
+        <b>
+            <p>Duração do Curso</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="far fa-clock prefix"></i>
+            <input type="tel" id="validationServer03" class="form-control" [(ngModel)]="curso.duracao" name="duracao" />
+        </div>
+        <b>
+            <p>URL da imagem</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="fas fa-database prefix"></i>
+            <input type="text" id="validationServer04" class="form-control" [(ngModel)]="curso.urlImagem" name="url" />
+            <div class="valid-feedback">
+                OK
+            </div>
+        </div>
+
+        <b>
+            <p>Preço do Curso</p>
+        </b>
+        <div class="md-form form-sm">
+            <i class="fas fa-dollar-sign prefix"></i>
+            <input type="text" id="validationServer05" [(ngModel)]="curso.preco" class="form-control form-control-sm"
+                name="preco" />
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-rounded" (click)="cadastrarCurso()">Enviar <i
+                    class="fa fa-paper-plane-o ml-1"></i>
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+

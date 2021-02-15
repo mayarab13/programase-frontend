@@ -1,0 +1,37 @@
+<div class="container-busca">
+  <div class="container p-5">
+    <div>
+      <div class="input-buscar-cursos-container">
+        <input
+          type="text"
+          id="myInput"
+          class="form-control"
+          placeholder="Pesquisar Cursos"
+          [(ngModel)]="nome"
+        />
+        <button class="but btn btn-rounded btn-search-curso" (click)="buscar()">Pesquisar</button>
+      </div>
+    </div>
+    <div class="mt-2">
+      <table class="table" id="myTable"> 
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Duração</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let curso of cursoLista">
+            <td><a [routerLink]="['/pagina-curso', curso.id]"> {{ curso.nome }}</a></td>
+            <td>{{ curso.descricao }}</td>
+            <td>{{ curso.duracao }}</td>
+            <td>{{ curso.preco }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

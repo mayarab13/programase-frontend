@@ -1,0 +1,50 @@
+<div>
+
+
+  <div class="curso-header">
+
+    <h1 class="card-title p-5">{{curso.nome}}</h1>
+ 
+  </div>
+
+  <div class="curso-body">
+
+    <div class="p-lg-4 m-lg-0 curso-image-container  m-sm-auto col-lg-4">
+      <img class="card-img-top" src="{{curso.urlImagem}}" alt="imagem do curso">
+    </div>
+
+    <div class="pt-5 pb-5 m-lg-0 m-sm-auto d-flex justify-content-around flex-column col-lg-8">
+
+      <p class="pt-lg-5">{{curso.descricao}}</p>
+
+      <p>Esse curso oferecido pela ProgrAme-se tem a duração de: 
+        <span class="font-weight-bold">{{curso.duracao}}
+         horas</span>.</p>
+
+      <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+          <h4 class="font-weight-bold">R$ {{curso.preco}}</h4>
+      
+          <button class="btn btn-comprar">Comprar</button>  
+  
+        </div>
+  
+        <div class="quality-seal mr-lg-4">
+
+          <img src="./../../../assets/images/cogs.jpeg" alt="">
+  
+          <p>Todos os cursos oferecidos pela ProgrAme-se tem nosso selo de qualidade :)</p>
+  
+        </div>
+
+      </div>
+      
+
+    </div>
+
+
+  </div>
+
+</div>

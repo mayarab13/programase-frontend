@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar-container">
+    <a class="navbar-brand" [routerLink]="'/home'"> <img src="./../../assets/images/logo.PNG" alt="logo do progrAme.se" width="40px" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link recolhe" [routerLink]="'/home'">HOME</a>
+            </li>
+            <li class="navbar-dot">•</li>
+            <li class="nav-item">
+                <a class="nav-link recolhe" [routerLink]="'/buscar-curso'">BUSCAR CURSOS</a>
+            </li>
+            <li class="navbar-dot">•</li>
+            <li class="nav-item">
+                <a class="nav-link recolhe" [routerLink]="'/sobre-nos'">SOBRE NÓS</a>
+            </li>
+            <li class="navbar-dot">•</li>
+            <li class="nav-item">
+                <a class="nav-link recolhe" [routerLink]="'/contato'">CONTATO</a>
+            </li>
+            <li class="navbar-dot">•</li>
+            <li class="nav-item">
+                <a class="nav-link recolhe" [routerLink]="'/central-de-ajuda'">CENTRAL DE AJUDA</a>
+            </li>
+            <li class="navbar-dot">•</li>
+            <li class="nav-item">
+                <a class="nav-link recolhe" [routerLink]="'/causas'">CAUSAS</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-lg-auto mr-lg-0">
+            <li class="nav-item my-auto dropdown pb-3 pb-lg-0 pt-3 pt-lg-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    ADMIN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-item recolhe" [routerLink]="'/curso'">CURSOS</a>
+                    <a class="nav-link dropdown-item recolhe" [routerLink]="'/cadastrar-curso'">CADASTRAR CURSOS</a>
+                    <a class="nav-link dropdown-item recolhe" [routerLink]="'/listar-usuario'">LISTA DE ALUNOS</a>
+                </div>
+            </li>
+            <li class="nav-item pb-3 pb-lg-0 m-auto">
+                <a class="nav-link btn btn-rounded" data-toggle="modal" data-target="#modalLRForm2" [routerLink]="'/cadastrar-usuario'">REGISTRE-SE</a>
+            </li>
+            <li class="nav-item pb-3 pb-lg-0 m-auto">
+                <a class="nav-link btn btn-rounded" data-toggle="modal" data-target="#modalLRForm" [routerLink]="'/login'">LOGIN</a>
+            </li>
+            <ul class="ul-lupa pl-0">
+                <li class="nav-item">
+                    <a class="nav-link fa fa-search-plus plus"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fa fa-search-minus"></a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+</nav>

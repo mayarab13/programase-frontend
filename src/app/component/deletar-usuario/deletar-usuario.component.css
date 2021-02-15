@@ -1,0 +1,22 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    text-align: center;
+    width: max-content;
+    
+    }
+    
+    p{
+        width: 100%;
+    }
+    
+    .container-delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }

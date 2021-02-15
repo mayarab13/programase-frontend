@@ -1,0 +1,50 @@
+.btn-comprar
+{ 
+  background-color: #4097aa;
+  color: #fff;
+  width: fit-content;
+}
+
+.curso-header {
+  background-color: #f3deca;
+  /* background-image: url('./../../../assets/images/5.png');
+  background-position: center;
+  background-size: cover; */
+  width: 100%;
+  height: fit-content;
+}
+
+.curso-header h1 {
+  color: #4097AA; 
+  font-weight: bold;
+  text-align: center;
+}
+
+.quality-seal {
+  max-width: 300px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.quality-seal p {
+  font-size: 14px;
+  max-width: 250px;
+} 
+
+.quality-seal img {
+    max-width: 250px;
+}
+
+.curso-image-container {
+  min-width: 300px;
+  /* background-color: #f3deca; */
+}
+
+.curso-image-container img {
+  max-width: 350px;
+}
+
+.curso-body {
+  display: flex;
+  flex-wrap: wrap;
+}

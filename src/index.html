@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>progrAme.se</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.PNG">
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+
+  <!--recolher menu-->
+  <script>
+    $(document).ready(function () {
+      $(".recolhe").click(function () {
+        $(".collapse").collapse('hide');
+      });
+    });
+
+  </script>
+
+
+  <ui-view></ui-view>
+  <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+  <script>
+    var ht = new HT({
+      token: "e950ece9669e54adbc4272a605a81600"
+    });
+
+  </script>
+</body>
+
+</html>
+
+<!--ZoomInZoomOutJS-->
+
+<script type="text/javascript">
+  $(function () {
+    $(".nav-link").bind("click", function () {
+      var _zoom = +$('body').css("zoom");
+      if ($(this).hasClass("plus")) {
+        _zoom = _zoom + 0.1;
+      } else {
+        _zoom = _zoom - 0.1;
+        if (_zoom <= 1) {
+          _zoom = 1;
+        }
+      }
+      $('body').css("zoom", _zoom);
+    });
+  });
+
+</script>

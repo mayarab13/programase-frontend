@@ -1,0 +1,20 @@
+<div class="tabela">
+    <table class="table col-12 col-md-12 col-sm-12">
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Senha</th>
+            <th>Excluir</th>
+            <th>Editar</th>
+        </tr>
+        <tr *ngFor="let usuario of cadastrados">
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.email}}</td>
+            <td>{{usuario.telefone}}</td>
+            <td>{{usuario.senha}}</td>
+            <td><a [routerLink]="['/deletar-usuario', usuario.id]"><i class="fa fa-eraser"></i></a> </td>
+            <td><a [routerLink]="['/alterar-usuario', usuario.id]"><i class="fa fa-pencil-alt"></i></a> </td>
+        </tr>
+    </table>
+</div>

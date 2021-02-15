@@ -1,0 +1,35 @@
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-title{
+  color: #4097AA;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.md-form label{
+  color: #bdbdbd;
+  font-size: 0.8em;
+}
+
+.btn{
+  color: #ffff;
+  background-color: #4097AA;
+}
+.fa{
+  color: #4097AA;
+}
+
+.fundo{
+  background-image: url("../../../assets/images/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.contato-form{
+  padding-left: 3em;
+}

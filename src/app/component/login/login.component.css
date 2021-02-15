@@ -1,0 +1,46 @@
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-title {
+    color: #4097aa;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.btn{
+    color: #4097aa;
+}
+.fa {
+    color: #4097aa;
+}
+
+.btn {
+    background-color: #4097aa;
+    color: #ffffff;
+}
+
+.login-logo {
+    align-self: center;
+    align-self: center;
+}
+
+.logo {
+    align-items: center;
+    align-content: center;
+}
+
+.modal-content {
+    align-items: center
+}
+
+.modal-content {
+    background: url('../../../assets/images/bg-modal.png') center center no-repeat;
+}
+
+.text-center {
+    font-size: small;
+}

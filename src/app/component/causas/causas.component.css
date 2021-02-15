@@ -1,0 +1,28 @@
+.sobre-a-causa {
+    background-color: linear-gradient(to bottom, #ffffff, #f3deca);
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-size: cover;
+  }
+  
+  .img-causa {
+    height: auto;
+    width: 100%;
+  }
+  
+  #titulo-causa {
+    padding-bottom: 2em;
+    padding-top: 1em;
+    text-align: center;
+    color: #fa9483;
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  
+  .sub-titulo {
+    padding-bottom: 1em
+  }
+  
+  .txt {
+    padding-bottom: 1em
+  }

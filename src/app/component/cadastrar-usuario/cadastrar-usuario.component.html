@@ -1,0 +1,54 @@
+<!--Modal: Register Form-->
+
+<div class="modal fade" id="modalLRForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="login-logo">
+
+                <br><br>
+                <label>
+                    <h1 class="form-title">Cadastre-se</h1>
+                </label>
+
+            </div>
+
+            <form class="col-xl-10 py-6 center-block">
+                <div class="md-form form-sm">
+                    <i class="fa fa-user prefix"></i>
+                    <input type="text" id="form6" class="form-control form-control-sm" [(ngModel)]="usuario.nome" [ngModelOptions]="{standalone: true}" />
+                    <label for="form6">Nome</label>
+                </div>
+                <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="text" id="form7" class="form-control form-control-sm" [(ngModel)]="usuario.email" [ngModelOptions]="{standalone: true}" />
+                    <label for="form7">E-mail</label>
+                </div>
+                <div class="md-form form-sm">
+                    <i class="fa fa-phone prefix"></i>
+                    <input type="tel" id="form8" class="form-control form-control-sm" [(ngModel)]="usuario.telefone" [ngModelOptions]="{standalone: true}" pattern="[0-9]{8,11}" />
+                    <label for="form8">Telefone</label>
+                </div>
+                <div class="md-form form-sm">
+                    <i class="fa fa-unlock-alt prefix "></i>
+                    <input type="password" id="form9" [(ngModel)]="usuario.senha" [ngModelOptions]="{standalone: true}" (keyup)="forcaDaSenha()" class="form-control form-control-sm" />
+                    <label for="form9">Senha</label>
+                </div>
+                <div *ngIf="this.usuario.senha && this.usuario.senha.length >= 1">
+                    {{this.senhaForte ? 'Senha Forte': 'Senha fraca'}}
+                </div>
+
+                <div class="md-form form-sm">
+                    <i class="fa fa-unlock-alt prefix"></i>
+                    <input type="password" id="form10" (keyup)="verificaSenhasConferem()" [(ngModel)]="confirmacaoSenha" [ngModelOptions]="{standalone: true}" class="form-control form-control-sm" />
+                    <label for="form10">Confirmar senha:</label>
+                </div>
+                <div *ngIf="this.confirmacaoSenha.length >= 1 && this.usuario.senha !== this.confirmacaoSenha">
+                    Senhas não conferem</div>
+
+                <div class="text-center mt-4">
+                    <button data-dismiss="modal" class="btn btn btn-rounded" (click)="cadastrar()" [disabled]="!formularioDeUsuario.valid && !this.senhasConferem">
+                Enviar <i class="fa fa-paper-plane-o ml-1"></i>
+            </button>
+                </div>
+            </form>

@@ -1,0 +1,41 @@
+.carousel-inner { /*parte de dentro do carousel*/
+  width: 77.8%;
+  margin: auto;
+}
+
+.destaque-card-container h1 {
+  color: #4097AA;
+}
+
+.destaque-card-container {
+  background: linear-gradient(to bottom, #ffffff, #f3deca);
+}
+
+.cursos-cards {
+  max-width: 300px;
+}
+
+.btn-comprar
+{ 
+  background-color: #4097aa;
+  color: #fff;
+  align-self: baseline;
+}
+
+.cursos-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-block {   
+  height: 560px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 2px;
+}
+
